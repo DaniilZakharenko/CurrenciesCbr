@@ -1,0 +1,17 @@
+{
+  "name": "daniilzakharenko/currency-rate",
+  "description": "A PHP package to get currency rates from cbr.ru",
+  "type": "library",
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.0.1",
+    "predis/predis": "^1.1",
+    "ext-simplexml": "*",
+    "ext-readline": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CurrencyCbr\\": "src/"
+    }
+  }
+}

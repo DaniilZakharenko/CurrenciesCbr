@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    ports:
+      - 16382:6379
